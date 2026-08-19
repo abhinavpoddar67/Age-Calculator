@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,38 +10,40 @@
 
   <title>Frontend Mentor | Age calculator app</title>
 
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-  <main class="Container">
+  <main class="container">
 
     <div id="inputContainer">
 
       <div class="days">
-        <p>Day</p>
+        <p>DAY</p>
         <input id="day" type="number" placeholder="DD">
       </div>
 
       <div class="months">
-        <p>Month</p>
+        <p>MONTH</p>
         <input id="month" type="number" placeholder="MM">
       </div>
 
       <div class="years">
-        <p>Year</p>
+        <p>YEAR</p>
         <input id="year" type="number" placeholder="YYYY">
       </div>
 
+      <button id="btn"><img src="./assets/images/icon-arrow.svg"></button>
+
     </div>
 
-    <button id="btn"><img src="./assets/images/icon-arrow.svg"></button>
 
-    <div>
-      <div id="yearOutput">-- years</div>
-      <div id="monthOutput">-- months</div>
-      <div id="dayOutput">-- days</div>
+    <div class="outputContainer">
+      <div class="output"><i><span id="yearOutput">--</span> years</i></div>
+      <div class="output"><i><span id="monthOutput">--</span> months</i></div>
+      <div class="output"><i><span id="dayOutput">--</span> days</i></div>
     </div>
 
   </main>
